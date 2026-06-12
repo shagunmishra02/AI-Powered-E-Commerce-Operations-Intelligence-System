@@ -1,0 +1,9 @@
+data/raw/
+__pycache__/
+.env
+.streamlit/secrets.toml
+.claude/
+**/.ipynb_checkpoints/
+*.pyc
+venv/
+
