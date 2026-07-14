@@ -51,10 +51,10 @@ page = st.sidebar.radio(
 # Load data
 @st.cache_data
 def load_data():
-    master    = pd.read_csv(os.path.join(BASE_DIR, "Data", "Processed", "master_data.csv"))
-    rfm       = pd.read_csv(os.path.join(BASE_DIR, "Data", "Processed", "rfm_segments.csv"))
-    forecast  = pd.read_csv(os.path.join(BASE_DIR, "Data", "Processed", "demand_forecast.csv"))
-    anomalies = pd.read_csv(os.path.join(BASE_DIR, "Data", "Processed", "seller_anomalies.csv"))
+    master    = pd.read_csv(os.path.join(BASE_DIR, "data", "Processed", "master_data.csv"))
+    rfm       = pd.read_csv(os.path.join(BASE_DIR, "data", "Processed", "rfm_segments.csv"))
+    forecast  = pd.read_csv(os.path.join(BASE_DIR, "data", "Processed", "demand_forecast.csv"))
+    anomalies = pd.read_csv(os.path.join(BASE_DIR, "data", "Processed", "seller_anomalies.csv"))
     return master, rfm, forecast, anomalies
 
 master, rfm, forecast, anomalies = load_data()
